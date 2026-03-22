@@ -1,0 +1,26 @@
+p 230.0 55.0 prod 1 n
+p 465.0 60.0 empty1 1 n
+p 695.0 50.0 cons 1 n
+p 50.0 50.0 empty2 1 n
+t 35.0 205.0 produce2 0 w n
+p 50.0 345.0 full2 0 n
+p 470.0 350.0 full1 0 n
+t 650.0 185.0 consume1 0 w n
+t 335.0 175.0 produce1 0 w n
+t 255.0 275.0 consume2 0 w n
+e consume2 empty2 1 n
+e consume2 cons 1 n
+e full2 consume2 1 n
+e cons consume2 1 n
+e produce2 prod 1 n
+e produce2 full2 1 n
+e empty2 produce2 1 n
+e prod produce2 1 n
+e produce1 prod 1 n
+e prod produce1 1 n
+e consume1 empty1 1 n
+e consume1 cons 1 n
+e cons consume1 1 n
+e full1 consume1 1 n
+e produce1 full1 1 n
+e empty1 produce1 1 n
